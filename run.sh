@@ -1,7 +1,7 @@
 #!/bin/bash
 set -m
 
-mongodb_cmd="mongod --storageEngine mmapv1"
+mongodb_cmd="mongod --smallfiles --storageEngine mmapv1"
 cmd="$mongodb_cmd --master --auth"
 
 $cmd &
